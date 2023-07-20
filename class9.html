@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+ </head>
+ <p style="font-family: Times New Roman;">Just be honest with yourself and take the test..!!</p>
+ <body>
+  Q1.Will you often use “stuff” and “things” these words while talking?<br>
+    <input type="radio" name="Question1">yes<br>
+    <input type="radio" name="Question1" id="correct1">no<br><br>
+
+  Q2.Do you able to mirror write these letters 'p','q'?<br>
+    <input type="radio" name="Question2" id="correct2">yes<br>
+    <input type="radio" name="Question2">no<br><br>
+
+  Q3.Can you re-enter this captcha code&nbsp;<img src="captchacode.png"><br>
+    <input type="radio" name="Question3" id="correct3">9yhx6b<br>
+    <input type="radio" name="Question3">9yhx6p<br>
+    <input type="radio" name="Question3">6yhx9p<br><br>
+
+  Q4.Can you speak loud in public?<br>
+   <input type="radio" name="Question4" id="correct4">yes<br>
+   <input type="radio" name="Question4">no<br><br>
+  
+  Q5.What do you think about your hand writing?<br>
+    <input type="radio" name="Question5" id="correct5">It is legible<br>
+    <input type="radio" name="Question5">No, It is not legible<br><br>
+
+    <input type="submit" name="submit" value="Submit the Quiz" onclick="result()">
+
+    <script>
+        function result(){
+           var score=0;
+           if(document.getElementById('correct1').checked)
+           {
+            score++;
+           }
+           if(document.getElementById('correct2').checked)
+           {
+            score++;
+           }
+           if(document.getElementById('correct3').checked)
+           {
+            score++;
+           }
+           if(document.getElementById('correct4').checked)
+           {
+            score++;
+           }
+           if(document.getElementById('correct5').checked)
+           {
+            score++;
+           }
+           alert("Your score is "+score+ " .If your score is 4 and above there is no need to worry, you are good to go. Else just try to reattempt the quiz and check your score.Even then, If your score is below 3 we recommend you to have a consultation.")
+
+        }
+    </script>
+
+</body>
+</html

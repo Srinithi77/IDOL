@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+ </head>
+ <p style="font-family: Times New Roman;">Just be honest with yourself and take the test..!!</p>
+ <body>
+  Q1. Can you spell the word "because" in 6-7 seconds?<br>
+    <input type="radio" name="Question1" id="correct1">yes<br>
+    <input type="radio" name="Question1">no<br><br>
+
+  Q2. Does these numbers are straight or inverted " 9 " and " 5 " ?<br>
+    <input type="radio" name="Question2" id="correct2">straight<br>
+    <input type="radio" name="Question2">inverted<br><br>
+
+  Q3. Can you sound the words "cat" or "map"?<br>
+    <input type="radio" name="Question3" id="correct3">yes<br>
+    <input type="radio" name="Question3">no<br><br>
+
+  Q4. How does this sentence appear to you? - queen and her peers went to the garden<br>
+  <input type="radio" name="Question4">pueen and her qeers went to the garden<br>
+  <input type="radio" name="Question4" id="correct4">queen and her peers went to the garden<br>
+  <input type="radio" name="Question4">queen and her qeers went to the garden<br>
+  <input type="radio" name="Question4">pueen and her peers went to the garden<br><br>
+
+  Q5. Pick the word from the options given below: "entrepreneur"<br>
+  <input type="radio" name="Question5">entreqreneur<br>
+  <input type="radio" name="Question5" id="correct5">entrepreneur<br><br><br>
+
+  <input type="submit" name="submit" value="Submit the Quiz" onclick="result()">
+
+  <script type="text/javascript">
+    function result(){
+      var score=0;
+               if(document.getElementById('correct1').checked)
+               {
+                score++;
+               }
+               if(document.getElementById('correct2').checked)
+               {
+                score++;
+               }
+               if(document.getElementById('correct3').checked)
+               {
+                score++;
+               }
+               if(document.getElementById('correct4').checked)
+               {
+                score++;
+               }
+               if(document.getElementById('correct5').checked)
+               {
+                score++;
+               }
+               alert("Your score is "+score+" .If your score is 4 and above there is no need to worry, you are good to go. Else just try to reattempt the quiz and check your score.Even then, If your score is below 3 we recommend you to have a consultation.")
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+ </head>
+ <p style="font-family: Times New Roman;">Just be honest with yourself and take the test..!!</p>
+ <body>
+  Q1.Does your son/daughter require great mental effort for reading?<br>
+    <input type="radio" name="Question1" id="correct1">yes<br>
+    <input type="radio" name="Question1">no<br><br>
+
+  Q2.Does your son/daughter  have any trouble in remembering names amd important dates<br>
+    <input type="radio" name="Question2" id="correct2">yes<br>
+    <input type="radio" name="Question2">no<br><br>
+
+  Q3.Are your son/daughter  lacking quick response during conversations?<br>
+    <input type="radio" name="Question3" id="correct3">yes<br>
+    <input type="radio" name="Question3">no<br><br>
+
+  Q4.Is your son/daughter not able to speak or read loud in public?<br>
+   <input type="radio" name="Question4" id="correct4">yes<br>
+   <input type="radio" name="Question4">no<br><br>
+  
+  Q5.Does your son/daughter have confusion with words that sound alike?<br>
+    <input type="radio" name="Question5" id="correct5">yes<br>
+    <input type="radio" name="Question5">no<br><br>
+
+    <input type="submit" name="submit" value="Submit the Quiz" onclick="result()">
+
+    <script>
+        function result(){
+           var score=0;
+           if(document.getElementById('correct1').checked)
+           {
+            score++;
+           }
+           if(document.getElementById('correct2').checked)
+           {
+            score++;
+           }
+           if(document.getElementById('correct3').checked)
+           {
+            score++;
+           }
+           if(document.getElementById('correct4').checked)
+           {
+            score++;
+           }
+           if(document.getElementById('correct5').checked)
+           {
+            score++;
+           }
+           alert("Your score is "+score+ " .If your score is 4 and above we recommend your kid to have a consultation just in case.")
+
+
+        }
+    </script>
+
+</body>
+</html
